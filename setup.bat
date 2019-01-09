@@ -23,7 +23,7 @@ where python >nul 2>&1 && (
   set LIB=C:\Program Files\OpenSSL-Win64\lib;%LIB%
   set INCLUDE=C:\Program Files\OpenSSL-Win64\include;%INCLUDE%
   echo [INSTALL] Installing Requirements
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
   echo [INSTALL] Migrating Database
   python manage.py makemigrations
   python manage.py makemigrations StaticAnalyzer
